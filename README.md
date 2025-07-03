@@ -29,7 +29,7 @@ DATABASE="nome-do-banco"
 SMTPEMAIL="email-de-usuário"
 SMTPPASS="senha-de-usuário"
 ```
-Configurões do servidor SMTP no arquivo `validation.py`. 
+Configurações do servidor SMTP no arquivo `validation.py`. 
 
 Exemplos de domínio do servidor: 
 
