@@ -13,7 +13,7 @@ Crie e ative um ambiente virtual
 
 `PS C:\> <venv>\Scripts\Activate.ps1`
 
-Instale a depêndencias do projeto
+Instale as depêndencias do projeto
 
 `python3 -m pip install -r requirements.txt`
 
