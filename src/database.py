@@ -80,7 +80,7 @@ class DatabaseConnector:
         return email[0][0]
     
 
-# Craindo as tabelas de cadastro de usuário e código para recuperar a conta do usuário
+# Criando as tabelas de cadastro de usuário e código para recuperar a conta do usuário
 db = DatabaseConnector()
 db.connect_database(f"""
     CREATE TABLE IF NOT EXISTS users(
