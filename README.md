@@ -28,10 +28,10 @@ Crie um arquivo `.env` nas pasta `\src\` em seguida insira as configurações.
 ```
 HOST=localhost
 USER=root
-PASSWORD="senha-do-banco"
-DATABASE="nome-do-banco"
-SMTPEMAIL="email-de-usuário"
-SMTPPASS="senha-de-usuário"
+PASSWORD="database-password"
+DATABASE="database-name"
+SMTPEMAIL="email-smtp-server"
+SMTPPASS="password-smtp-server"
 ```
 Configurações do servidor SMTP no arquivo `validation.py`. 
 
@@ -49,36 +49,6 @@ configure a instância:
 self.smtp = SmtpServer(host, port) # Use a porta 587
 ```
 
-Depois de todas as configurações feitas, execute o arquivo `windows.py`
-
-### Telas do projeto
-
-Tela de login
-
-<img title="login" alt="tela de login" src="img/2025-04-04_21-42.png">
-
-Tela de cadastro de usuário
-
-<img title="register" alt="tela de cadastro" src="img/2025-04-04_21-42_1.png">
-
-Tela para inserir o email de recuperação de conta
-
-<img title="password_email_recovery_layout" alt="tela de email para recuperação de conta" src="img/2025-04-04_21-43.png">
-
-Tela para inserir o código para alterar senha
-
-<img title="recovery_code_layout" alt="tela do código de recuperação de conta" src="img/2025-04-04_21-43_1.png">
-
-Tela para alterar a senha do usuário
-
-<img title="change_password_layout" alt="tela para alterar a senha" src="img/2025-04-04_21-44.png">
-
-
-____
-
-### Contribuição do projeto
-
-Solicitações `pull` são aceitas. Para ajudar no projeto abra uma Issues. 
 
 
 
