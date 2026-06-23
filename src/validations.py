@@ -1,11 +1,10 @@
-# IMPORTAÇÕES 
 import hashlib
 import re
 import PySimpleGUI as sg
 from database import DatabaseConnector
 from smtp_server import SmtpServer
 
-# Classe com funções regex
+# Regex
 class RegularExpression:
     def __init__(self):
         self.username_regex = r"^[A-Za-záàâãéèêíïóôõöúçñ]{6,}$"
@@ -14,7 +13,7 @@ class RegularExpression:
         self.password_regex = r"[0-9A-Za-záàâãéèêíïóôõöúçñ@#$%¨&*\"()-+={}\[\]~^,.]{4,}$"
         self.code_regex = r"^[A-Z0-9]{4}$"
 
-# Classe para transformar a senha em sha256 base64
+# sha256 base64
 class Hash:
     def __init__(self, password):
         self.password = str(password).encode()
@@ -23,7 +22,6 @@ class Hash:
         hash_password = hashlib.sha256(self.password).hexdigest()
         return hash_password
 
-# Classe principal para validar dados, tratar erros exceções
 class DataValidation(Hash):
     def __init__(self):
         self.regex = RegularExpression()
