@@ -79,8 +79,6 @@ class DatabaseConnector:
         email = self.select_fetchall(f"SELECT email FROM users WHERE email='{email}'")
         return email[0][0]
     
-
-# Criando as tabelas de cadastro de usuário e código para recuperar a conta do usuário
 db = DatabaseConnector()
 db.connect_database(f"""
     CREATE TABLE IF NOT EXISTS users(
